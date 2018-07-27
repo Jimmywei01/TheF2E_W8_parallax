@@ -1,175 +1,162 @@
 
-//header
-
-.title {
-    margin: 0 auto;
-    text-align: center;
-    color: $f2eW1-first;
-    font-style: italic;
-    background-color: $f2eW1-second;
-    width: 100%;
-    height: 72px;
-    line-height: 72px;
+body,html{
+    background-color: $f2eW1-first;
 }
 
-//content
-
-h2 {
-    margin: 0;
-}
-
-.col-6 {
-    @include col(left, 2, 0, 10px);
-}
-
-.col-6 {
-    img {
-        float: right;
-        background: #FFFFFF;
-        border: 4px solid #000000;
-        width: 292px;
-        height: 438px;
-    }
-}
-
-.col-6.hexschool {
-    h2 {
-        margin-bottom: 16px;
-        width: 317px;
-        height: 52px;
-        color: #fff;
-        background-color: #000;
-        font-size: 36px;
-        line-height: 52px;
-        text-align: center;
-    }
-}
-
-.subtitle {
-    font-weight: bold;
-    padding-bottom: 8px;
-}
-
-p {
-    display: inline-block;
-    padding-right: 20px;
-    line-height: 24px;
-}
-
-.rate {
-    font-weight: bold;
-    margin-bottom: 24px;
-    .subtitle {
-        float: left;
-        padding-right: 39px;
-        line-height: 24px;
-    }
-    .star li {
-        display: inline-block;
-    }
-}
-
-.summary {
-    p {
-        display: block;
-        font-weight: bold;
-    }
-    .info {
-        width: 350px;
-        height: 202px;
-        line-height: 24px;
-        display: block;
-        .hexschool p {
-            margin-bottom: 24px;
-            font-weight: initial;
-        }
-    }
-}
-
-@include for-size(pad-portrait-only) {
-    .col-6 {
-        @include col(left, 1, 0, 10px);
-        img {
-            background: #FFFFFF;
-            border: 4px solid #000000;
-            width: 100%;
-            height: auto;
-        }
-    }
-    .col-6.hexschool {
-        h2 {
-            width: 100%;
-        }
-    }
-}
-
-//footer
-
-.countainer {
-    margin-top: 28px;
-}
-
-.chapters {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    p {
-        padding: 0;
-        font-size: 24px;
-        color: #fff;
-        background-color: #000;
-        width: 181px;
-        height: 44px;
-        text-align: center;
-        line-height: 44px;
-    }
-}
-
-.page {
-    padding: 10px 0;
-    width: 620px;
-    height: 106px;
-    border: 4px solid black;
-    li {
-        position: relative;
-        a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-            &:hover {
-                background-color: #000;
-                color: #fff;
-            }
-        }
-    }
-    span {
-        float: right;
+.box{
         position: absolute;
-        margin-left: 16px;
-        padding: 2px 12px;
-        font-size: 14px;
-        border: 1px solid #50FF44;
-        background: #50FF44;
+        transform: translate(-50%, -60%);
+        top: 60%;
+        left: 50%;
+        // margin: 184px 285px;
+        width: 450px;
+        height: 450px;
+        border: 1px solid black;
+        background-color: #000;
+        z-index: 1;
+        animation: boxRate 4.5s ease-out;
+}
+.crici{
+     transform: translate(-50%, -62%);
+     top: 62%;
+     left: 50%;
+        // margin: 140px 242px;
+        width: 539px;
+        height: 534px;
+        position: absolute;
+        border: 1px solid $f2eW1-second;
+        border-radius: 539px;
+        background-color: $f2eW1-second;
+        z-index: 2;
+        animation: criciRate 5s ease;
+    }
+// .star{
+//         position: relative;
+//         top: 10px;
+// }
+.triangle{
+        position: absolute;
+         transform: translate(-52%, -50%);
+         top: 50%;
+         left: 52%;
+        //     top: -9%;
+        //     left: 15%;
+        // margin: 100px 325px;
+         width: 400px;
+         height: 500px;
+         border:1px solid $f2eW1-third;
+         clip-path: polygon(15% 59%, 0 38%, 30% 37%, 46% 16%, 62% 37%, 89% 37%, 76% 59%, 90% 79%, 63% 79%, 47% 98%, 30% 79%, 0 79%);
+         background-color:$f2eW1-third;
+         animation: triangleRate 5.5s ease-in;
+         z-index: 3;
+    }
+
+
+.waper{
+    margin: 0 auto;
+    // background-color: $f2eW1-first;
+    // width: 1024px;
+    // height: 768px;
+    h1 {
+        position: absolute;
+            transform: translate(-50%,-50%);
+            top: 48%;
+            left: 50%;
+        z-index: 5;
+        // top: 50%;
+        // transform: translatey(-50%);
+        font-family: Roboto-Bold;
+        font-size: 64px;
+        color: #FFFFFF;
         text-align: center;
-        font-weight: bold;
-        color: #000;
-        bottom: 8px;
-        left: 250px;
+    }
+    h3{
+            position: absolute;
+            transform: translate(-50%, -60%);
+            top: 60%;
+            left: 50%;
+            font-size: 24px;
+            color: #FFFFFF;
+            // line-height: 36px;
+            z-index: 5;
+            text-align: center;
+            // top: 40%;
     }
 }
 
-@include for-size(pad-portrait-only) {
-    .chapters {
-        margin: 0;
-        max-width: 100%;
+// 加 translate(-50%,-50%) 讓中心點偏移回來
+@keyframes boxRate {
+     0% {
+         transform: translate(-50%, -60%) rotate(0deg);
+     }
+
+     78% {
+         transform: translate(-50%, -60%)  rotate(-360deg);
+     }
+
+     80% {
+         transform: translate(-50%, -60%) rotate(-360deg);
+     }
+
+     90% {
+         transform: translate(-50%, -60%) rotate(-360deg) scale(5);
+         opacity: 1;
+     }
+
+     100% {
+         transform: translate(-50%, -60%) rotate(-360deg) scale(5);
+         opacity: 0;
+     }
+}
+
+@keyframes criciRate {
+    0% {
+        transform : translate(-55%, -62%) rotate(0deg);
     }
-    .page {
-        width: 100%;
-        span {
-            margin-left: 5px;
-            padding: 2px 10px;
-        }
+
+    78% {
+        transform : translate(-55%, -62%) rotate(-360deg);
+    }
+
+    80% {
+        transform : translate(-55%, -62%) rotate(-360deg);
+    }
+
+    90% {
+        transform : translate(-55%, -62%) rotate(-360deg) scale(5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -62%) rotate(-360deg) scale(5);
+        opacity: 0;
     }
 }
+
+
+
+
+@keyframes triangleRate {
+    0% {
+        transform:translate(-52%, -50%) rotate(0deg);
+    }
+
+    78% {
+        transform:translate(-52%, -50%) rotate(-360deg);
+    }
+
+    80% {
+        transform:translate(-52%, -50%) rotate(-360deg);
+    }
+
+    90% {
+        transform: translate(-52%, -50%) rotate(-360deg) scale(10);
+        opacity: 1;
+    }
+
+    100% {
+        transform:translate(-52%, -50%) rotate(-360deg) scale(10);
+        opacity: 0;
+    }
+}
+
