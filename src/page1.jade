@@ -1,16 +1,7 @@
 extends _layout.jade
 
-block index
-  #header
-    .waper
-      .box
-      .crici
-         a(href="page1.html").star
-      h1 GEOMETRY PERSON
-      h3 find your core personality type in shapes!
-      p START!
-
-    .question1
+block page1
+  .question1
       .q1
         h2 Q1
         h3 If one day you get a gift that can change the rule of the world, which ability will you choose? 
@@ -20,7 +11,8 @@ block index
           a(href="").answer(data-point='1') Destroy all humans in the world
           a(href="").answer(data-point='3') Make the war never happened
           a(href="").answer(data-point='5') You won’t get old and live forever
-    .move
+
+      .move
         .rect
         .triangle
         .cricle

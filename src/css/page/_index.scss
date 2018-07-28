@@ -1,7 +1,5 @@
 
-body,html{
-    background-color: $f2eW1-first;
-}
+
 
 .box{
         position: absolute;
@@ -34,11 +32,11 @@ body,html{
 //         position: relative;
 //         top: 10px;
 // }
-.triangle{
+.star{
         position: absolute;
-         transform: translate(-52%, -50%);
-         top: 50%;
-         left: 52%;
+         transform: translate(-60%, -50%);
+         top: 250px;
+         left: 60%;
         //     top: -9%;
         //     left: 15%;
         // margin: 100px 325px;
@@ -47,20 +45,20 @@ body,html{
          border:1px solid $f2eW1-third;
          clip-path: polygon(15% 59%, 0 38%, 30% 37%, 46% 16%, 62% 37%, 89% 37%, 76% 59%, 90% 79%, 63% 79%, 47% 98%, 30% 79%, 0 79%);
          background-color:$f2eW1-third;
-         animation: triangleRate 5.5s ease-in;
+         animation: starRate 5.5s ease-in;
          z-index: 3;
     }
 
 
 .waper{
     margin: 0 auto;
-    // background-color: $f2eW1-first;
+    background-color: $f2eW1-first;
     // width: 1024px;
-    // height: 768px;
+    height: 768px;
     h1 {
         position: absolute;
             transform: translate(-50%,-50%);
-            top: 48%;
+            top: 400px;
             left: 50%;
         z-index: 5;
         // top: 50%;
@@ -73,7 +71,7 @@ body,html{
     h3{
             position: absolute;
             transform: translate(-50%, -60%);
-            top: 60%;
+            top: 500px;
             left: 50%;
             font-size: 24px;
             color: #FFFFFF;
@@ -82,6 +80,19 @@ body,html{
             text-align: center;
             // top: 40%;
     }
+    p{
+           position: absolute;
+           transform: translate(-50%, -60%);
+           top: 560px;
+           left: 50%;
+           font-size: 24px;
+           color: #FFFFFF; // line-height: 36px;
+           z-index: 5;
+           text-align: center; // top: 40%;
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 50px;
+        }
 }
 
 // 加 translate(-50%,-50%) 讓中心點偏移回來
@@ -136,7 +147,7 @@ body,html{
 
 
 
-@keyframes triangleRate {
+@keyframes starRate {
     0% {
         transform:translate(-52%, -50%) rotate(0deg);
     }
@@ -160,3 +171,49 @@ body,html{
     }
 }
 
+
+.question1{
+    width: 60%;
+    height: 768px;
+}
+.q1{
+    color: #FFFFFF;
+    h2{
+        margin: 86px 380px 10px 122px;
+        font-size: 64px;
+        color: #FF3C82;
+    }
+    h3{
+        font-size: 36px;
+        color: #FFFFFF;
+        line-height: 48px;
+        margin: 0 300px 16px 122px;
+    }
+    p{
+        font-size: 24px;
+        color: #0027C8;
+        line-height: 36px;
+        margin: 0 350px 40px 122px;
+    }
+}
+
+.choosOptical{
+    .answer{
+        display: block;
+        padding: 10px;
+        margin: 0 300px 16px 122px;
+        border: 2px solid #FFFFFF;
+        border-radius: 30.5px;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 36px;
+        text-decoration: none;
+    }
+
+}
+
+.move{
+    background: #0027C8;
+    height: 768px;
+}
