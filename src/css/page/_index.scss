@@ -2,8 +2,9 @@
 
 .box{
         position: absolute;
+        transform: translate(-50%);
         top: 220px;
-        left: 495px;
+        left: 50%;
         width: 450px;
         height: 450px;
         border: 1px solid black;
@@ -13,8 +14,10 @@
 }
 .crici{
         position: absolute;
+        transform: translate(-50%);
         top: 180px;
-        left: 450px;
+        // left: 450px;
+        left: 50%;
         width: 539px;
         height: 534px;
         border: 1px solid $f2eW1-second;
@@ -26,8 +29,10 @@
 
 .star{
         position: absolute;
+        transform: translate(-47%);
         top: 180px;
-        left: 530px;
+        // left: 530px;
+        left: 50%;
         width: 400px;
         height: 500px;
         border:1px solid $f2eW1-third;
