@@ -1,9 +1,10 @@
 
-## 作品網址:   https://jimmywei01.github.io/TheF2E_W8_parallax/
+## 作品網址:   https://jimmywei01.github.io/TheF2E_W8_parallax/index.html
 
 ## 使用技術: 
 ### html preprocessor (pug、slim、haml)
 ### CSS preprocessor (Sass、Less)
+### CSS animation
 
 ---
 
