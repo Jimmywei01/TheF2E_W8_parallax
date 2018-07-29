@@ -80,18 +80,23 @@
             text-align: center;
             // top: 40%;
     }
-    p{
+    .p{
            position: absolute;
            transform: translate(-50%, -60%);
            top: 560px;
            left: 50%;
            font-size: 24px;
-           color: #FFFFFF; // line-height: 36px;
+           
            z-index: 5;
-           text-align: center; // top: 40%;
+           text-align: center; 
             border: 1px solid white;
             padding: 10px;
             border-radius: 50px;
+            a{
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+            
         }
 }
 
