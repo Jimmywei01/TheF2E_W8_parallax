@@ -2,7 +2,7 @@
 
 
 .box{
-        position: absolute;
+        // position: absolute;
         transform: translate(-50%, -60%);
         top: 60%;
         left: 50%;
@@ -21,7 +21,7 @@
         // margin: 140px 242px;
         width: 539px;
         height: 534px;
-        position: absolute;
+        // position: absolute;
         border: 1px solid $f2eW1-second;
         border-radius: 539px;
         background-color: $f2eW1-second;
@@ -33,10 +33,10 @@
 //         top: 10px;
 // }
 .star{
-        position: absolute;
-         transform: translate(-60%, -50%);
+        // position: absolute;
+        //  transform: translate(-60%, -50%);
          top: 250px;
-         left: 60%;
+         left: 60px;
         //     top: -9%;
         //     left: 15%;
         // margin: 100px 325px;
@@ -54,7 +54,7 @@
     margin: 0 auto;
     background-color: $f2eW1-first;
     // width: 1024px;
-    height: 768px;
+    // height: 768px;
     h1 {
         position: absolute;
             transform: translate(-50%,-50%);

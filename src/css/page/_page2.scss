@@ -20,7 +20,7 @@
                     width: 300px;
                     height: 300px;
                     margin: -150px -120px;
-                    animation: rect 3s linear 0s both;
+                    animation: rect2 3s linear 0s both;
                 }
                 .triangle {
                     position: absolute;
@@ -32,7 +32,7 @@
                     border-style: solid;
                     border-width: 0 200px 346.4px 200px;
                     border-color: transparent transparent #FFFFFF transparent;
-                    animation: triangle 3s linear 0s both;
+                    animation: triangle2 3s linear 0s both;
                 }
                 .cricle {
                     position: absolute;
@@ -42,7 +42,7 @@
                     border-radius: 190px;
                     margin: 504px 0 0 150px;
                     background-color: #000;
-                    animation: cricle 3s linear 0s both;
+                    animation: cricle2 3s linear 0s both;
                 }
 }
 
@@ -113,7 +113,7 @@
     }
 }
 
-@keyframes rect {
+@keyframes rect2 {
     0% {
         transform: translateX(-80%);
         opacity: 0;
@@ -132,7 +132,7 @@
     }
 }
 
-@keyframes triangle {
+@keyframes triangle2 {
     0% {
         transform: translateX(-80%);
         opacity: 0;
@@ -159,7 +159,7 @@
     }
 }
 
-@keyframes cricle {
+@keyframes cricle2 {
     0% {
         transform: translateX(-80%);
         opacity: 0;
