@@ -1,11 +1,13 @@
-
+body,html{
+    
+}
 
 
 .box{
         position: absolute;
-        transform: translate(-50%, -60%);
-        top: 60%;
-        left: 50%;
+        // transform: translate(-50%, -60%);
+           top: 220px;
+           left: 495px;
         // margin: 184px 285px;
         width: 450px;
         height: 450px;
@@ -15,9 +17,9 @@
         animation: boxRate 4.5s ease-out;
 }
 .crici{
-     transform: translate(-50%, -62%);
-     top: 62%;
-     left: 50%;
+    //  transform: translate(-50%, -62%);
+     top: 180px;
+     left: 450px;
         // margin: 140px 242px;
         width: 539px;
         height: 534px;
@@ -31,12 +33,12 @@
 
 .star{
         position: absolute;
-         transform: translate(-60%, -50%);
-         top: 250px;
-         left: 60%;
+        //  transform: translate(-55%, -50%);
+         top: 180px;
+         left: 530px;
         //     top: -9%;
         //     left: 15%;
-        // margin: 100px 325px;
+        // margin: 100px 25px;
          width: 400px;
          height: 500px;
          border:1px solid $f2eW1-third;
@@ -100,48 +102,48 @@
 // 加 translate(-50%,-50%) 讓中心點偏移回來
 @keyframes boxRate {
      0% {
-         transform: translate(-50%, -60%) rotate(0deg);
+         transform:  rotate(0deg);
      }
 
      78% {
-         transform: translate(-50%, -60%)  rotate(-360deg);
+         transform:   rotate(-360deg);
      }
 
      80% {
-         transform: translate(-50%, -60%) rotate(-360deg);
+         transform:  rotate(-360deg);
      }
 
      90% {
-         transform: translate(-50%, -60%) rotate(-360deg) scale(5);
+         transform:  rotate(-360deg) scale(5);
          opacity: 1;
      }
 
      100% {
-         transform: translate(-50%, -60%) rotate(-360deg) scale(5);
+         transform:  rotate(-360deg) scale(5);
          opacity: 0;
      }
 }
 
 @keyframes criciRate {
     0% {
-        transform : translate(-55%, -62%) rotate(0deg);
+        transform : rotate(0deg);
     }
 
     78% {
-        transform : translate(-55%, -62%) rotate(-360deg);
+        transform :  rotate(-360deg);
     }
 
     80% {
-        transform : translate(-55%, -62%) rotate(-360deg);
+        transform : rotate(-360deg);
     }
 
     90% {
-        transform : translate(-55%, -62%) rotate(-360deg) scale(5);
+        transform :  rotate(-360deg) scale(5);
         opacity: 1;
     }
 
     100% {
-        transform: translate(-50%, -62%) rotate(-360deg) scale(5);
+        transform: rotate(-360deg) scale(5);
         opacity: 0;
     }
 }
@@ -151,24 +153,24 @@
 
 @keyframes starRate {
     0% {
-        transform:translate(-52%, -50%) rotate(0deg);
+        transform: rotate(0deg);
     }
 
     78% {
-        transform:translate(-52%, -50%) rotate(-360deg);
+        transform: rotate(-360deg);
     }
 
     80% {
-        transform:translate(-52%, -50%) rotate(-360deg);
+        transform: rotate(-360deg);
     }
 
     90% {
-        transform: translate(-52%, -50%) rotate(-360deg) scale(10);
+        transform:  rotate(-360deg) scale(10);
         opacity: 1;
     }
 
     100% {
-        transform:translate(-52%, -50%) rotate(-360deg) scale(10);
+        transform: rotate(-360deg) scale(10);
         opacity: 0;
     }
 }

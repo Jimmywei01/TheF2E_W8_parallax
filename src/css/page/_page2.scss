@@ -11,7 +11,7 @@
         width: 40%;
         background-color: #FF3C82;
         transform: translateX(-60%);
-        animation: moving 1.5s ease-out both;
+        animation: moving2 1.5s ease-out both;
         .rect {
                     position: absolute;
                     top: 65%;
@@ -102,7 +102,7 @@
 }
 
 
-@keyframes moving {
+@keyframes moving2 {
     0% {
         transform: translateX(-80%);
         opacity: 1;
