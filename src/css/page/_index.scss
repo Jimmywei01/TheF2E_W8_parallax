@@ -1,14 +1,9 @@
-body,html{
-    
-}
 
 
 .box{
         position: absolute;
-        // transform: translate(-50%, -60%);
-           top: 220px;
-           left: 495px;
-        // margin: 184px 285px;
+        top: 220px;
+        left: 495px;
         width: 450px;
         height: 450px;
         border: 1px solid black;
@@ -17,13 +12,11 @@ body,html{
         animation: boxRate 4.5s ease-out;
 }
 .crici{
-    //  transform: translate(-50%, -62%);
-     top: 180px;
-     left: 450px;
-        // margin: 140px 242px;
+        position: absolute;
+        top: 180px;
+        left: 450px;
         width: 539px;
         height: 534px;
-        position: absolute;
         border: 1px solid $f2eW1-second;
         border-radius: 539px;
         background-color: $f2eW1-second;
@@ -33,19 +26,15 @@ body,html{
 
 .star{
         position: absolute;
-        //  transform: translate(-55%, -50%);
-         top: 180px;
-         left: 530px;
-        //     top: -9%;
-        //     left: 15%;
-        // margin: 100px 25px;
-         width: 400px;
-         height: 500px;
-         border:1px solid $f2eW1-third;
-         clip-path: polygon(15% 59%, 0 38%, 30% 37%, 46% 16%, 62% 37%, 89% 37%, 76% 59%, 90% 79%, 63% 79%, 47% 98%, 30% 79%, 0 79%);
-         background-color:$f2eW1-third;
-         animation: starRate 5.5s ease-in;
-         z-index: 3;
+        top: 180px;
+        left: 530px;
+        width: 400px;
+        height: 500px;
+        border:1px solid $f2eW1-third;
+        clip-path: polygon(15% 59%, 0 38%, 30% 37%, 46% 16%, 62% 37%, 89% 37%, 76% 59%, 90% 79%, 63% 79%, 47% 98%, 30% 79%, 0 79%);
+        background-color:$f2eW1-third;
+        animation: starRate 5.5s ease-in;
+        z-index: 3;
     }
 
 
@@ -60,8 +49,6 @@ body,html{
             top: 400px;
             left: 50%;
         z-index: 5;
-        // top: 50%;
-        // transform: translatey(-50%);
         font-family: Roboto-Bold;
         font-size: 64px;
         color: #FFFFFF;
@@ -74,10 +61,8 @@ body,html{
             left: 50%;
             font-size: 24px;
             color: #FFFFFF;
-            // line-height: 36px;
             z-index: 5;
             text-align: center;
-            // top: 40%;
     }
     .p{
            position: absolute;
@@ -85,7 +70,6 @@ body,html{
            top: 560px;
            left: 50%;
            font-size: 24px;
-           
            z-index: 5;
            text-align: center; 
             border: 1px solid white;
